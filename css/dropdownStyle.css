@@ -1,0 +1,79 @@
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .dropdown-img {
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: flex;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 150%;
+    left: 30%;
+    opacity: 0;
+    /* make submenu not hoverable when opacity transition finished,
+     * do this instantaneously */
+    transition: max-height 0s 1.5s,
+                /* hide the submenu after 1 second, in 400ms */
+                opacity .2s 0.5s;
+    
+    /* prevent users from showing submenu when hovering hidden element */
+    pointer-events: none;
+    z-index: 4;
+  }
+
+  .dropdown-content > * {
+    pointer-events: auto;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 8px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content:hover,
+  .dropdown:hover .dropdown-content {
+    max-height: 500px;
+    pointer-events: all;
+    opacity: 1;
+    transition-delay: 0s;
+
+    
+  }
+
+  @media screen and (max-width:768px) {
+    .dropdown-content {
+
+      position: flex;
+      background-color: #f1f1f1;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      top: 150%;
+      left: 0;
+      right: 250px;
+      width: 160px;
+      align-items: center;
+      opacity: 0;
+      /* make submenu not hoverable when opacity transition finished,
+       * do this instantaneously */
+      transition: max-height 0s 1.5s,
+                  /* hide the submenu after 1 second, in 400ms */
+                  opacity .2s 0.5s;
+      
+      /* prevent users from showing submenu when hovering hidden element */
+      pointer-events: none;
+      z-index: 4;
+    }
+  
+  }
+  

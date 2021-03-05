@@ -1,1 +1,126 @@
-"Hello World" 
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet/less" type="text/css" href="styles.less" />
+      
+        <link rel="stylesheet" href="./css/carouselStyle.css">
+        <link rel="stylesheet" href="./css/linksUnderline.css">
+        <link rel="stylesheet" href="./css/dropdownStyle.css">
+        <link rel="stylesheet" href="./css/navStyle.css">
+        <title>Tengu</title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <object type="image/svg+xml" data="./icon/Tengu.svg" width="70px" height="70px"></object>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <div class="box">
+                        <a href="#" class="custom-underline">Home</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="#" class="custom-underline">Kickistarter</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box dropdown">
+                        <a class="custom-underline">Social Media</a>
+                        <div class="dropdown-content">
+                            <a class="dropdown-link" href="#1">
+                                <img class="dropdown-img" src="./icon/facebook.png" href="#">
+                            </a>
+                            <a class="dropdown-link" href="#2">
+                                <img class="dropdown-img" src="./icon/instagram.png" href="#">
+                            </a>
+                            <a class="dropdown-link" href="#3">
+                                <img class="dropdown-img" src="./icon/twitter.png" href="#">
+                            </a>
+                        </div>
+                    </div>
+                   
+                    
+                </li>
+            </ul>
+            <div class="burguer">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                    <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>   
+                    
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+                </ol>
+                <div class="carousel-item vividworknav">
+                    <img class="d-block w-100" src="./img/img_01.jpg" data-color="lightblue" alt="First Image">
+                    <div class="black-curtain">
+                        <div class="work-text-content ">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            <div class="download-btn">
+                                <button type="button" class="btn btn-secondary">Download</button>
+                            </div>
+                        </div> 
+                    </div>
+                      
+                </div>
+                <div class="carousel-item vividworknav">
+                    <img class="d-block w-100" src="./img/img_02.jpg" data-color="lightblue" alt="Second Image">
+                    <div class="black-curtain">
+                        <div class="work-text-content ">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            <div class="download-btn">
+                                <button type="button" class="btn btn-secondary">Download</button>
+                            </div>
+
+                            
+                        </div> 
+                    </div>  
+                </div>
+                <div class="carousel-item vividworknav">
+                    <img class="d-block w-100" src="./img/img_03.jpg" data-color="lightblue" alt="Third Image">
+                    <div class="black-curtain">
+                        <div class="work-text-content ">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            <button type="button" class="btn btn-secondary">Download</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+       
+
+
+          
+            
+        
+       
+       
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./js/nav.js"></script>
+        <script src="./js/carousel.js"></script>
+    </body>
+</html>
