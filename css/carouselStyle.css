@@ -38,12 +38,13 @@ body {
 .carousel-indicators {
     bottom: 15%;
     margin: 0 !important;
-    width: 350px;
+    width: 250px;
 }
 
 .carousel-indicators li{
-    width: 70px;
-    height: 7px;
+    width: 30px;
+    height: 30px;
+    margin: 8px !important;
     border-radius: 150%;
     position: relative;
 }
